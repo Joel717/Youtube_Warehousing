@@ -1,0 +1,26 @@
+PROBLEM STATEMENT 
+
+Aim:
+      The ultimate motive behind the project was to make a application which would gather analytics data from youtube using Youtube api 
+  and load it into a  data lake which could be retrived for analysis when needed. 
+  Streamlit, MongoDB and PostgresSQL were chosen as development tools and python was chosen as the scripting language.
+
+Requirements:
+  -The app needs to be simple and the script should be reusable.
+  -The app must be able to retrive statistics of Youtube channels using Youtube Ids,even multiple channels at once. 
+  -The app must be effecient enough to upload the retrieved data into MongoDB with a single button 
+  -The app must be also be albe to push the datalake data into Postgres SQL for further analysis 
+  -The app should also be able to fetch data from sql for easier and fundamental analysis.
+
+Approach:
+  Data Collection from YouTube:
+  -Utilizes the YouTube API to retrieve channel information, playlist details, video data, and comments.
+  MongoDB Storage:
+  -Stores collected data in MongoDB for initial storage and easy retrieval.
+  SQL Database Migration:
+  -Facilitates the migration of data from MongoDB to PostgreSQL for more advanced querying.
+  Streamlit App:
+  -Provides a user-friendly interface using Streamlit for data exploration, including viewing tables and executing SQL queries.
+  SQL Queries:
+  -Allows users to execute SQL queries on the PostgreSQL database to gain insights from the collected data.
+
